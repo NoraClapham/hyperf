@@ -89,7 +89,7 @@ class Sender
         }
 
         // PROCESS: connection_info() is shared, so a failed proxy() means the fd is dead.
-        return true;
+        return false;
     }
 
     public function pushFrame(int $fd, FrameInterface $frame): bool
